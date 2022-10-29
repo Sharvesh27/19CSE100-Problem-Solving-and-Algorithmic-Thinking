@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="USER"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-10-28 10:55:49 AM"/>
+        <attribute name="created" value="VVNFUjtERVNLVE9QLTAzUk41UTg7MjAyMi0xMC0yODswOToxODoyOSBBTTsyNjI2"/>
+        <attribute name="edited" value="VVNFUjtERVNLVE9QLTAzUk41UTg7MjAyMi0xMC0yODsxMDo0NToyNyBBTTsyMTtVU0VSO0RFU0tUT1AtMDNSTjVRODsyMDIyLTEwLTI4OzA5OjE4OjI5IEFNO1N0dWRlbnRfSW5mby5mcHJnOzcyMjk="/>
+        <attribute name="edited" value="VVNFUjtERVNLVE9QLTAzUk41UTg7MjAyMi0xMC0yODsxMDo1NTo0OSBBTTs4OzI3MzY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Declaring Variables"/>
+            <declare name="RollNo, Name, Address, Bloodgrp, Dep" type="String" array="False" size=""/>
+            <declare name="Phone" type="Integer" array="False" size=""/>
+            <comment text="Recieving the necessary details"/>
+            <output expression="&quot;Enter RollNo&quot;" newline="True"/>
+            <input variable="RollNo"/>
+            <output expression="&quot;Enter your Name&quot;" newline="True"/>
+            <input variable="Name"/>
+            <output expression="&quot;Enter your Address&quot;" newline="True"/>
+            <input variable="Address"/>
+            <output expression="&quot;Enter your Bloodgrp&quot;" newline="True"/>
+            <input variable="Bloodgrp"/>
+            <output expression="&quot;Enter your Department&quot;" newline="True"/>
+            <input variable="Dep"/>
+            <output expression="&quot;Enter your Phone&quot;" newline="True"/>
+            <input variable="Phone"/>
+            <comment text="Displaying the Acquired data"/>
+            <output expression="&quot;STUDENT INFORMATION&quot;" newline="True"/>
+            <output expression="&quot;Roll no is &quot;&amp;RollNo" newline="True"/>
+            <output expression="&quot;Name is &quot;&amp;Name" newline="True"/>
+            <output expression="&quot;Address is &quot;&amp;Address" newline="True"/>
+            <output expression="&quot;Blood group is &quot;&amp;Bloodgrp" newline="True"/>
+            <output expression="&quot;Department is &quot;&amp;Dep" newline="True"/>
+            <output expression="&quot;Phone number is &quot;&amp;Phone" newline="True"/>
+            <comment text="Student Info Program is over"/>
+            <comment text="Declaring Variables"/>
+            <declare name="Subcode1, Subcode2, Subcode3" type="String" array="False" size=""/>
+            <declare name="Semester, Subcode1score, Subcode2score, Subcode3score, Total, Avg" type="Real" array="False" size=""/>
+            <comment text="Recieving the necessary details"/>
+            <output expression="&quot;Enter Semester&quot;" newline="True"/>
+            <input variable="Semester"/>
+            <output expression="&quot;Enter subject code 1&quot;" newline="True"/>
+            <input variable="Subcode1"/>
+            <output expression="&quot;Enter Subject 1 Score&quot;" newline="True"/>
+            <input variable="Subcode1score"/>
+            <output expression="&quot;Enter Subject code 2&quot;" newline="True"/>
+            <input variable="Subcode2"/>
+            <output expression="&quot;Enter Subject code 2 score&quot;" newline="True"/>
+            <input variable="Subcode2score"/>
+            <output expression="&quot;Enter Subject code 3&quot;" newline="True"/>
+            <input variable="Subcode3"/>
+            <output expression="&quot;Enter Subject code 3 score&quot;" newline="True"/>
+            <input variable="Subcode3score"/>
+            <comment text="Calculating Total Marks"/>
+            <assign variable="Total" expression="Subcode1score+Subcode2score+Subcode3score"/>
+            <comment text="Calculating the Average"/>
+            <assign variable="Avg" expression="Total/3"/>
+            <comment text="Displaying the Final Marks Statement"/>
+            <output expression="&quot;STUDENTS MARK STATEMENT&quot;" newline="True"/>
+            <output expression="&quot;Subject code 1 &quot;&amp;Subcode1" newline="True"/>
+            <output expression="&quot;Subject code 2 &quot;&amp;Subcode2" newline="True"/>
+            <output expression="&quot;Subject code 3 &quot;&amp;Subcode3" newline="True"/>
+            <output expression="&quot;Total Marks is &quot;&amp;Total" newline="True"/>
+            <output expression="&quot;Average score is &quot;&amp;Avg" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

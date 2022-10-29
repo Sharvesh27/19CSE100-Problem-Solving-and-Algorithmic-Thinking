@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="USER"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-10-28 10:52:46 AM"/>
+        <attribute name="created" value="VVNFUjtERVNLVE9QLTAzUk41UTg7MjAyMi0xMC0yODswOToxODoyOSBBTTsyNjI2"/>
+        <attribute name="edited" value="VVNFUjtERVNLVE9QLTAzUk41UTg7MjAyMi0xMC0yODsxMDo1Mjo0NiBBTTszOzI3MjU="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Declaring Variables"/>
+            <declare name="RollNo, Name, Address, Bloodgrp, Dep" type="String" array="False" size=""/>
+            <declare name="Phone" type="Integer" array="False" size=""/>
+            <comment text="Recieving the necessary details"/>
+            <output expression="&quot;Enter RollNo&quot;" newline="True"/>
+            <input variable="RollNo"/>
+            <output expression="&quot;Enter your Name&quot;" newline="True"/>
+            <input variable="Name"/>
+            <output expression="&quot;Enter your Address&quot;" newline="True"/>
+            <input variable="Address"/>
+            <output expression="&quot;Enter your Bloodgrp&quot;" newline="True"/>
+            <input variable="Bloodgrp"/>
+            <output expression="&quot;Enter your Department&quot;" newline="True"/>
+            <input variable="Dep"/>
+            <output expression="&quot;Enter your Phone&quot;" newline="True"/>
+            <input variable="Phone"/>
+            <comment text="Displaying the Acquired data"/>
+            <output expression="&quot;The Student Info is&quot;" newline="True"/>
+            <output expression="&quot;Roll no is &quot;&amp;RollNo" newline="True"/>
+            <output expression="&quot;Name is &quot;&amp;Name" newline="True"/>
+            <output expression="&quot;Address is &quot;&amp;Address" newline="True"/>
+            <output expression="&quot;Bloodgrp is &quot;&amp;Bloodgrp" newline="True"/>
+            <output expression="&quot;Department is &quot;&amp;Dep" newline="True"/>
+            <output expression="&quot;Phone number is &quot;&amp;Phone" newline="True"/>
+            <comment text="The Student Information is Collected"/>
+        </body>
+    </function>
+</flowgorithm>
