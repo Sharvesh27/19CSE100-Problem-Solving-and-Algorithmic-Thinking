@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="cb.en.u4cys22061"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-04 10:09:39 AM"/>
+        <attribute name="created" value="Y2IuZW4udTRjeXMyMjA2MTsyMDIyMjNNQVlDMDA5ODsyMDIyLTExLTA0OzA5OjQwOjQ3IEFNOzMzMjY="/>
+        <attribute name="edited" value="Y2IuZW4udTRjeXMyMjA2MTsyMDIyMjNNQVlDMDA5ODsyMDIyLTExLTA0OzEwOjA5OjM5IEFNOzM7MzQzNA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;QUADRATIC EQUATION SOLUTION FINDER&quot;" newline="True"/>
+            <comment text="Declaring the variables"/>
+            <declare name="a, b, c, sol1, sol2" type="Real" array="False" size=""/>
+            <comment text="Acquiring the required information"/>
+            <output expression="&quot;Enter coefficient of 2 degree variable:&quot;" newline="True"/>
+            <input variable="a"/>
+            <output expression="&quot;Enter coefficient of 1 degree variable:&quot;" newline="True"/>
+            <input variable="b"/>
+            <output expression="&quot;Enter Constant value:&quot;" newline="True"/>
+            <input variable="c"/>
+            <comment text="Operations to find the solution"/>
+            <assign variable="sol1" expression="((-b)+(b^2-4*a*c)^0.5)/2*a"/>
+            <assign variable="sol2" expression="((-b)-(b^2-4*a*c)^0.5)/2*a"/>
+            <comment text="Displaying the output"/>
+            <output expression="&quot;The Solutions are:&quot;" newline="True"/>
+            <output expression="sol1" newline="True"/>
+            <output expression="sol2" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="cb.en.u4cys22061"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-04 10:37:18 AM"/>
+        <attribute name="created" value="Y2IuZW4udTRjeXMyMjA2MTsyMDIyMjNNQVlDMDA5ODsyMDIyLTExLTA0OzEwOjE1OjE2IEFNOzMzMTY="/>
+        <attribute name="edited" value="Y2IuZW4udTRjeXMyMjA2MTsyMDIyMjNNQVlDMDA5ODsyMDIyLTExLTA0OzEwOjM3OjE4IEFNOzU7MzQzNA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Declaring the variables"/>
+            <declare name="dividend, divisor" type="Real" array="False" size=""/>
+            <declare name="quotient, remainder" type="Integer" array="False" size=""/>
+            <comment text="Recieving the value of dividend"/>
+            <output expression="&quot;Enter the value of dividend:&quot;" newline="True"/>
+            <input variable="dividend"/>
+            <comment text="Recieving the value of divisor"/>
+            <output expression="&quot;Enter the value of divisor:&quot;" newline="True"/>
+            <input variable="divisor"/>
+            <comment text="Finding the quotient value"/>
+            <assign variable="quotient" expression="dividend/divisor"/>
+            <comment text="Substituting the value of quotient in remainder "/>
+            <assign variable="remainder" expression="dividend-(divisor*quotient)"/>
+            <comment text="Displaying the remainder"/>
+            <output expression="&quot;The Remainder is:&quot;" newline="True"/>
+            <output expression="remainder" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

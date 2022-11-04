@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="cb.en.u4cys22061"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-04 11:30:25 AM"/>
+        <attribute name="created" value="Y2IuZW4udTRjeXMyMjA2MTsyMDIyMjNNQVlDMDA5ODsyMDIyLTExLTA0OzA5OjEwOjE5IEFNOzMzMjI="/>
+        <attribute name="edited" value="Y2IuZW4udTRjeXMyMjA2MTsyMDIyMjNNQVlDMDA5ODsyMDIyLTExLTA0OzExOjMwOjI1IEFNOzU7MzQyNg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Start of C to F Converter"/>
+            <output expression="&quot;CELCIUS TO FARENHEIT CONVERTER&quot;" newline="True"/>
+            <comment text="Declaring the Variables"/>
+            <declare name="F, C" type="Real" array="False" size=""/>
+            <comment text="Recieveing the temperature value in Celcius"/>
+            <output expression="&quot;Input Celcius Temperature&quot;" newline="True"/>
+            <input variable="C"/>
+            <comment text="Operation to convert C TO F"/>
+            <assign variable="F" expression="1.8*C+32"/>
+            <comment text="Displaying the output in Farenheit"/>
+            <output expression="&quot;The Temperature in farenheit is:&quot;" newline="True"/>
+            <output expression="F" newline="True"/>
+            <comment text="Start of F to C Converter"/>
+            <output expression="&quot;FARENHEIT TO CELCIUS CONVERTER&quot;" newline="True"/>
+            <comment text="Recieving F value"/>
+            <output expression="&quot;Input Farenheit Temperature:&quot;" newline="True"/>
+            <input variable="F"/>
+            <comment text="Operation to convert F to C"/>
+            <assign variable="C" expression="(F-32)/1.8"/>
+            <comment text="Displaying the Temperature in C"/>
+            <output expression="&quot;Temperature in Celcius is:&quot;" newline="True"/>
+            <output expression="C" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
