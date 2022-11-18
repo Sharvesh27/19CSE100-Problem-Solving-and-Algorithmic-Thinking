@@ -1,0 +1,73 @@
+                                       ATM MACHINE INTERFACE ALGORITHM
+
+
+1)  Start
+2)  Declare Integer pin, secret, AccNo, x, bal, DepAmt, Newbal1, Wdramt, Newbal2, pin1, newpin, newpin1
+3)  Assign secret = 2233
+4)  Output "Welcome to ATM Machine"
+5)  Output "Please insert your card"
+6)  Output "Please enter your pin number"
+7)  Input pin
+8)  If pin=secret
+9)      Output "The pin is correct"
+10)     Output "Enter your Account number"
+11)     Input AccNo
+12)     Output "What do you want?"
+13)     Output "Check Balance:1   Deposit:2   Withdrawal:3   Pin_Change:4   Finish_Transaction:5"
+14)     Input x
+15)     If x=1
+16)         Output "Checking Account balance...."
+17)         Output "Your Account balance is 50000"
+18)     Else
+19)         If x=2
+20)             Output "DEPOSIT PORTAL"
+21)             Output "Enter your bank balance"
+22)             Input bal
+23)             Output "Enter Deposit Amount"
+24)             Input DepAmt
+25)             Output "Place your money in the cashbox with correct alignment"
+26)             Output "The Given Amount is deposited successfully"
+27)          Assign Newbal1 = bal+Depamt
+28)             Output "Your new balance is"
+29)             Output Newbal1
+30)         Else
+31)             If x=3
+32)                 Output "WITHDRAWAL PORTAL"
+33)                 Output "Enter your bank balance"
+34)                 Input bal
+35)                 If bal>499
+36)                     Output "Enter WIthdrawal Amount"
+38)                     Input Wdramt
+39)                     If bal-Wdramt>499
+40)                         Output "Collect your money from the cashbox box"
+41)                         Output "Withdrawal successful"
+42)                         Assign Newbal2 = bal-Wdramt
+43)                         Output "Your New balance is"
+44)                         Output Newbal2
+45)                     Else
+46)                         Output "Minimum balance required to withdraw money is 500.Transaction unsuccessful"
+47)                 Else
+48)                     Output "Minimum balance required to withdraw money is 500.Transaction unsuccessful"
+49)             Else
+50)                 If x=4
+51)                     Output "PIN CHANGE PORTAL"
+52)                     Output "Enter your old pin number"
+53)                     Input pin1
+54)                     If pin1=pin
+55)                         Output "Enter your new pin number"
+56)                         Input newpin
+57)                         Output "Enter your new pin number again"
+58)                         Input newpin1
+59)                         If newpin=newpin1
+60)                             Output "Your ATM Card pin changed successfully"
+61)                         Else
+62)                             Output "Both New pin didn't match properly.Please try again after some time"
+63)                     Else
+64)                        Output "Your entered pin number is incorrect.Please try after sometime"
+65)     Output "Thank you for using ATM Machine"
+66)     Output "Please remove your card"
+67) Else
+68)     Output "The entered pin is wrong.Transaction unsuccessful"
+69)     Output "Please remove your card"
+70) End
+

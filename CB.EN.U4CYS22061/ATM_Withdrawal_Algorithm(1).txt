@@ -1,0 +1,43 @@
+                                                 ATM WITHDRAWAL MACHINE    
+
+1)  Start
+2)  Declare Integer pin, AccNo, bal, Wdramt, x, secret, Newbal
+3)  Assign secret = 2233
+    
+4)  Output "WELCOME TO ATM Withdrawal Machine"
+5)  Output "Insert your ATM card"
+6)  Output "Card inserted successfully"
+7)  Output "Enter your pin number"
+8)  Input pin
+9)  If secret=pin
+10)      Output "Do you want to withdraw money?"
+11)      Output "PRESS YES:1 or NO:0"
+12)     Input x
+13)     If x=1
+14)         Output "Enter your account number"
+15)         Input AccNo
+16)         Output "Enter your account balance"
+17)         Input bal
+18)         If bal>499
+19)             Output "Enter your withdraw amount"
+20)             Input Wdramt
+21)             If bal-Wdramt>499
+22)                 Output "Collect your money from cash box"
+23)                 Output "Withdrawal successful"
+24)                 Assign Newbal = bal-Wdramt
+25)                 Output "The Newbalance is"
+26)                 Output Newbal
+27)             Else
+30)                 Output "Minimum balance requied to withdraw is Rs.500.Transaction unsuccessful"
+31)         Else
+32)            Output "Minimum balance required to withdraw money is 500.Transaction unsuccessful"
+33)            Output "Thank you for using ATM Withdrawal Machine"
+34)            Output "Please remove your card"
+35)     Else
+36)         Output "Thank you for using ATM Withdrawal Machine"
+37)         Output "Please remove your card"
+38) Else
+39)     Output "Pin is wrong"
+40)     Output "Transaction unsuccessful.Please try again later"
+41)     Output "Please remove your card"
+42) End
