@@ -1,0 +1,82 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="cb.en.u4cys22061"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-18 11:06:09 AM"/>
+        <attribute name="created" value="Y2IuZW4udTRjeXMyMjA2MTsyMDIyMjNNQVlDMDA5OTsyMDIyLTExLTE4OzA5OjA4OjAwIEFNOzMzMjU="/>
+        <attribute name="edited" value="Y2IuZW4udTRjeXMyMjA2MTsyMDIyMjNNQVlDMDA5OTsyMDIyLTExLTE4OzExOjA2OjA5IEFNOzU7MzQzNw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Declaring the variables"/>
+            <declare name="pin, AccNo, bal, Wdramt, x, secret, Newbal" type="Integer" array="False" size=""/>
+            <assign variable="secret" expression="2233"/>
+            <comment text="Start of program"/>
+            <output expression="&quot;WELCOME TO ATM Withdrawal Machine&quot;" newline="True"/>
+            <output expression="&quot;Insert your ATM card&quot;" newline="True"/>
+            <output expression="&quot;Card inserted successfully&quot;" newline="True"/>
+            <comment text="Asking for ATM PIN"/>
+            <output expression="&quot;Enter your pin number&quot;" newline="True"/>
+            <input variable="pin"/>
+            <comment text="Checking if the pin is correct or not"/>
+            <if expression="secret=pin">
+                <then>
+                    <comment text="Asking user consent for withdrawal"/>
+                    <output expression="&quot;Do you want to withdraw money?&quot;" newline="True"/>
+                    <output expression="&quot;PRESS YES:1 or NO:0&quot;" newline="True"/>
+                    <input variable="x"/>
+                    <if expression="x=1">
+                        <then>
+                            <comment text="Recieving Account Number"/>
+                            <output expression="&quot;Enter your account number&quot;" newline="True"/>
+                            <input variable="AccNo"/>
+                            <comment text="Recieving bank balance"/>
+                            <output expression="&quot;Enter your account balance&quot;" newline="True"/>
+                            <input variable="bal"/>
+                            <if expression="bal&gt;499">
+                                <then>
+                                    <comment text="Recieving Withrawal details"/>
+                                    <output expression="&quot;Enter your withdraw amount&quot;" newline="True"/>
+                                    <input variable="Wdramt"/>
+                                    <if expression="bal-Wdramt&gt;499">
+                                        <then>
+                                            <comment text="Displaying transaction successful message"/>
+                                            <output expression="&quot;Collect your money from cash box&quot;" newline="True"/>
+                                            <output expression="&quot;Withdrawal successful&quot;" newline="True"/>
+                                            <assign variable="Newbal" expression="bal-Wdramt"/>
+                                            <output expression="&quot;The Newbalance is&quot;" newline="True"/>
+                                            <output expression="Newbal" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <comment text="Displaying Transaction unsuccessful message as the condition is not satisfied&quot;"/>
+                                            <output expression="&quot;Minimum balance requied to withdraw is Rs.500.Transaction unsuccessful&quot;" newline="True"/>
+                                        </else>
+                                    </if>
+                                </then>
+                                <else>
+                                    <comment text="Displaying Transaction unsuccessful message as the condition is not satisfied&quot;"/>
+                                    <output expression="&quot;Minimum balance required to withdraw money is 500.Transaction unsuccessful&quot;" newline="True"/>
+                                </else>
+                            </if>
+                            <output expression="&quot;Thank you for using ATM Withdrawal Machine&quot;" newline="True"/>
+                            <output expression="&quot;Please remove your card&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Thank you for using ATM Withdrawal Machine&quot;" newline="True"/>
+                            <output expression="&quot;Please remove your card&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <comment text="&quot;Completing the transaction as pin is wrong&quot;"/>
+                    <output expression="&quot;Pin is wrong&quot;" newline="True"/>
+                    <output expression="&quot;Transaction unsuccessful.Please try again later&quot;" newline="True"/>
+                    <output expression="&quot;Please remove your card&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
