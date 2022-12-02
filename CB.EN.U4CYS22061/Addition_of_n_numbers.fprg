@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="cb.en.u4cys22061"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-12-02 09:17:03 AM"/>
+        <attribute name="created" value="Y2IuZW4udTRjeXMyMjA2MTsyMDIyMjNNQVlDMDA5ODsyMDIyLTEyLTAyOzA5OjAyOjUzIEFNOzMzMjA="/>
+        <attribute name="edited" value="Y2IuZW4udTRjeXMyMjA2MTsyMDIyMjNNQVlDMDA5ODsyMDIyLTEyLTAyOzA5OjE3OjAzIEFNOzI7MzQzMA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Declaring variables"/>
+            <declare name="n, a, c" type="Integer" array="False" size=""/>
+            <comment text="Recieving n value"/>
+            <output expression="&quot;Enter n&quot;" newline="True"/>
+            <input variable="n"/>
+            <assign variable="c" expression="0"/>
+            <comment text="For loop for calulating sum"/>
+            <for variable="a" start="0" end="n" direction="inc" step="1">
+                <assign variable="c" expression="a+c"/>
+            </for>
+            <comment text="Displaying output"/>
+            <output expression="c" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="cb.en.u4cys22061"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-12-02 10:00:25 AM"/>
+        <attribute name="created" value="Y2IuZW4udTRjeXMyMjA2MTsyMDIyMjNNQVlDMDA5ODsyMDIyLTEyLTAyOzA5OjIyOjU2IEFNOzMzMjU="/>
+        <attribute name="edited" value="Y2IuZW4udTRjeXMyMjA2MTsyMDIyMjNNQVlDMDA5ODsyMDIyLTEyLTAyOzEwOjAwOjI1IEFNOzI7MzQxOA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Declaring variables"/>
+            <declare name="b, a, n" type="Integer" array="False" size=""/>
+            <assign variable="b" expression="1"/>
+            <comment text="Using for loop"/>
+            <while expression="b&lt;=10">
+                <output expression="&quot;The Addition of&quot;&amp;b" newline="True"/>
+                <comment text="Using while loop to change numbers progressively"/>
+                <for variable="a" start="1" end="10" direction="inc" step="1">
+                    <assign variable="n" expression="b+a"/>
+                    <comment text="Displaying output"/>
+                    <output expression="a&amp; &quot;+&quot;&amp;b&amp; &quot;=&quot; &amp;n" newline="True"/>
+                </for>
+                <comment text="Inreasing b after for loop completes"/>
+                <assign variable="b" expression="b+1"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>
